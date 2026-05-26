@@ -1,0 +1,380 @@
+/* Custom scrollbars and transitions */
+:root {
+  --font-bricolage: 'Bricolage Grotesque', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+
+  /* Colors */
+  --color-navy: #011625;
+  --color-light-navy: #417BA4;
+  --color-orange: #FF5623;
+  --color-dark: #181818;
+  --color-dark-gray: #272727;
+  --color-text-primary: #303030;
+  --color-text-secondary: rgba(94, 94, 94, 0.8);
+  --color-text-muted: rgba(94, 94, 94, 0.55);
+  
+  --color-bg-white: #FFFFFF;
+  --color-bg-off-white: #F6F6F6;
+  --color-bg-off-white-darker: #F0F0F0;
+  --color-bg-gradient: linear-gradient(180deg, #EEEEEE 0%, #DADADA 100%);
+  
+  --color-success: #4BC26D;
+  --color-success-bg: rgba(75, 194, 109, 0.15);
+  --color-error: #C53535;
+  --color-error-bg: rgba(197, 53, 53, 0.1);
+  --color-warning: #FFADAD;
+  
+  /* Shadows */
+  --shadow-realistic: 0px 16px 48px rgba(0, 0, 0, 0.08), 0px 32px 48px rgba(0, 0, 0, 0.12);
+  --shadow-card: 0px 8px 30px rgba(146, 146, 146, 0.1);
+  --shadow-button: 0px 4px 10px rgba(24, 24, 24, 0.15);
+  --border-radius-lg: 24px;
+  --border-radius-md: 16px;
+  --border-radius-sm: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-inter);
+  color: var(--color-text-primary);
+  background: var(--color-bg-gradient);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Micro-animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseBorder {
+  0% { box-shadow: 0 0 0 0 rgba(255, 86, 35, 0.4); }
+  70% { box-shadow: 0 0 0 8px rgba(255, 86, 35, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 86, 35, 0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.shimmer-bg {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Common Layout Components */
+.monorepo-container {
+  display: flex;
+  min-height: 100vh;
+  padding: 12px;
+  gap: 12px;
+  position: relative;
+}
+
+/* Custom visual styling helpers */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: -0.02em;
+}
+
+.badge-easy {
+  background: rgba(75, 194, 109, 0.15);
+  color: #2e8b46;
+}
+
+.badge-medium {
+  background: rgba(255, 173, 173, 0.25);
+  color: #b05c04;
+}
+
+.badge-hard {
+  background: rgba(197, 53, 53, 0.1);
+  color: var(--color-error);
+}
+
+.badge-completed {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+}
+
+.badge-processing {
+  background: rgba(255, 86, 35, 0.15);
+  color: var(--color-orange);
+  animation: pulseBorder 2s infinite;
+}
+
+.badge-failed {
+  background: var(--color-error-bg);
+  color: var(--color-error);
+}
+
+.badge-pending {
+  background: #f0f0f0;
+  color: #666;
+}
+
+/* Custom interactive input elements */
+.veda-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.veda-input-label {
+  font-family: var(--font-bricolage);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+}
+
+.veda-input {
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: var(--color-bg-white);
+  color: var(--color-text-primary);
+  font-family: var(--font-inter);
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.veda-input:focus {
+  border-color: var(--color-orange);
+  box-shadow: 0 0 0 3px rgba(255, 86, 35, 0.15);
+}
+
+.veda-textarea {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: var(--color-bg-white);
+  color: var(--color-text-primary);
+  font-family: var(--font-inter);
+  font-size: 14px;
+  min-height: 100px;
+  resize: vertical;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.veda-textarea:focus {
+  border-color: var(--color-orange);
+  box-shadow: 0 0 0 3px rgba(255, 86, 35, 0.15);
+}
+
+/* Buttons style system */
+.veda-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  gap: 8px;
+  border-radius: 48px;
+  font-family: var(--font-bricolage);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+}
+
+.veda-btn-primary {
+  background: var(--color-dark);
+  color: #FFFFFF;
+  box-shadow: var(--shadow-button);
+}
+
+.veda-btn-primary:hover {
+  transform: translateY(-2px);
+  background: #252525;
+  box-shadow: 0px 8px 20px rgba(24, 24, 24, 0.25);
+}
+
+.veda-btn-orange {
+  background: var(--color-orange);
+  color: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(255, 86, 35, 0.2);
+}
+
+.veda-btn-orange:hover {
+  transform: translateY(-2px);
+  background: #ff6838;
+  box-shadow: 0px 8px 20px rgba(255, 86, 35, 0.35);
+}
+
+.veda-btn-secondary {
+  background: var(--color-bg-off-white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--color-text-primary);
+}
+
+.veda-btn-secondary:hover {
+  background: var(--color-bg-off-white-darker);
+  transform: translateY(-1px);
+}
+
+/* Custom exam styles for PDF printing view */
+.exam-container {
+  background: var(--color-bg-white);
+  border-radius: var(--border-radius-md);
+  padding: 40px;
+  box-shadow: var(--shadow-card);
+  max-width: 850px;
+  margin: 0 auto;
+  min-height: 1000px;
+  position: relative;
+}
+
+.exam-header {
+  text-align: center;
+  border-bottom: 3px double var(--color-text-primary);
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+}
+
+.exam-school {
+  font-family: var(--font-bricolage);
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-navy);
+  letter-spacing: -0.04em;
+}
+
+.exam-title {
+  font-family: var(--font-bricolage);
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 6px;
+  color: var(--color-text-primary);
+}
+
+.exam-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.exam-student-info {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 16px;
+  border-bottom: 1px solid var(--color-text-primary);
+  padding-bottom: 12px;
+  margin-bottom: 28px;
+}
+
+.exam-student-field {
+  display: flex;
+  align-items: flex-end;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  font-family: var(--font-bricolage);
+}
+
+.exam-student-field span {
+  flex-grow: 1;
+  border-bottom: 1px dashed #666;
+  margin-left: 6px;
+  height: 18px;
+}
+
+.exam-section-header {
+  font-family: var(--font-bricolage);
+  font-weight: 800;
+  font-size: 16px;
+  border-bottom: 1px solid var(--color-text-primary);
+  padding-bottom: 4px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+.exam-section-instruction {
+  font-style: italic;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.exam-question-item {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 14px;
+  page-break-inside: avoid;
+}
+
+.exam-question-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-weight: 500;
+}
+
+.exam-question-marks {
+  font-family: var(--font-bricolage);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.exam-question-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 8px;
+  margin-left: 20px;
+}
+
+.exam-question-option {
+  display: flex;
+  gap: 8px;
+}

@@ -1,0 +1,1269 @@
+[
+  {
+    "title": "World History",
+    "dueDate": "2026-06-30",
+    "questionTypes": [
+      "MCQ",
+      "Short Answer"
+    ],
+    "numQuestions": 10,
+    "totalMarks": 50,
+    "instructions": "",
+    "id": "367e075f-a364-41c7-94d7-a6619cac8e49",
+    "status": "completed",
+    "createdAt": "2026-05-26T04:18:31.583Z",
+    "sections": [
+      {
+        "id": "sec-46f6ddd4",
+        "title": "Section A: Fundamentals",
+        "instruction": "Attempt all questions in this section. Each question carries 5 mark(s).",
+        "questions": [
+          {
+            "id": "q-677f4bca",
+            "text": "What is a variable, and how does it differ from a constant? (Topic Focus: World History - MCQ & Short Answer)",
+            "difficulty": "easy",
+            "marks": 5,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-6da371a3",
+            "text": "Write a function in JavaScript to check if a given string is a palindrome. (Topic Focus: World History - MCQ & Short Answer)",
+            "difficulty": "medium",
+            "marks": 5,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-f78de421",
+            "text": "Explain the concept of Recursion with a short code example. (Topic Focus: World History - MCQ & Short Answer)",
+            "difficulty": "hard",
+            "marks": 5,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-21b9f797",
+            "text": "What is the time complexity of binary search on a sorted array? Explain. (Topic Focus: World History - MCQ & Short Answer)",
+            "difficulty": "easy",
+            "marks": 5,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-a17d1012",
+        "title": "Section B: Intermediate Exercises",
+        "instruction": "Attempt all questions in this section. Each question carries 5 mark(s).",
+        "questions": [
+          {
+            "id": "q-1c34fb65",
+            "text": "Explain the differences between REST and GraphQL APIs. (Topic Focus: World History - MCQ & Short Answer)",
+            "difficulty": "medium",
+            "marks": 5,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-bda874e6",
+            "text": "Describe the four pillars of Object-Oriented Programming (OOP) with real-world analogies. (Topic Focus: World History - MCQ & Short Answer)",
+            "difficulty": "hard",
+            "marks": 5,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-769ad043",
+            "text": "Write a Python script that reads a text file and counts the frequency of each word. (Topic Focus: World History - MCQ & Short Answer)",
+            "difficulty": "easy",
+            "marks": 5,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-9ebe7670",
+            "text": "What is a deadlock in Operating Systems? Describe the four necessary conditions for it to occur. (Topic Focus: World History - MCQ & Short Answer)",
+            "difficulty": "medium",
+            "marks": 5,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-88ea4dcb",
+        "title": "Section C: Advanced Problems",
+        "instruction": "Attempt all questions in this section. Each question carries 5 mark(s).",
+        "questions": [
+          {
+            "id": "q-55fbaf1c",
+            "text": "What is a variable, and how does it differ from a constant? (Topic Focus: World History - MCQ & Short Answer)",
+            "difficulty": "hard",
+            "marks": 5,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-fe704698",
+            "text": "Write a function in JavaScript to check if a given string is a palindrome. (Topic Focus: World History - MCQ & Short Answer)",
+            "difficulty": "easy",
+            "marks": 5,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "World History: Ancient Civilizations",
+    "dueDate": "2026-06-01",
+    "questionTypes": [
+      "MCQ",
+      "Short Answer"
+    ],
+    "numQuestions": 5,
+    "totalMarks": 25,
+    "instructions": "Answer all questions. Section A is multiple choice, Section B is short answer.",
+    "id": "e9a8ceeb-f6b0-4725-bd30-6c4473d76ff1",
+    "status": "completed",
+    "createdAt": "2026-05-26T04:10:52.653Z",
+    "sections": [
+      {
+        "id": "sec-615222e5",
+        "title": "Section A: Fundamentals",
+        "instruction": "Attempt all questions in this section. Each question carries 5 mark(s).",
+        "questions": [
+          {
+            "id": "q-63d622f3",
+            "text": "What is a variable, and how does it differ from a constant? (Topic Focus: World History: Ancient Civilizations - MCQ & Short Answer)",
+            "difficulty": "easy",
+            "marks": 5,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-662cb12b",
+            "text": "Write a function in JavaScript to check if a given string is a palindrome. (Topic Focus: World History: Ancient Civilizations - MCQ & Short Answer)",
+            "difficulty": "medium",
+            "marks": 5,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-adc142b8",
+            "text": "Explain the concept of Recursion with a short code example. (Topic Focus: World History: Ancient Civilizations - MCQ & Short Answer)",
+            "difficulty": "hard",
+            "marks": 5,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-0b9643c6",
+        "title": "Section B: Intermediate Exercises",
+        "instruction": "Attempt all questions in this section. Each question carries 5 mark(s).",
+        "questions": [
+          {
+            "id": "q-031d086f",
+            "text": "What is the time complexity of binary search on a sorted array? Explain. (Topic Focus: World History: Ancient Civilizations - MCQ & Short Answer)",
+            "difficulty": "medium",
+            "marks": 5,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-5031e878",
+            "text": "Explain the differences between REST and GraphQL APIs. (Topic Focus: World History: Ancient Civilizations - MCQ & Short Answer)",
+            "difficulty": "hard",
+            "marks": 5,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Microprocessor and MicroController",
+    "dueDate": "2026-05-26",
+    "questionTypes": [
+      "MCQ",
+      "Long Answer",
+      "True/False",
+      "One Word"
+    ],
+    "numQuestions": 25,
+    "totalMarks": 50,
+    "instructions": "",
+    "fileAttached": "CC record-1_merged (1).pdf",
+    "id": "f8989e38-3087-4301-a2e0-f421508ab950",
+    "status": "completed",
+    "createdAt": "2026-05-26T04:09:39.717Z",
+    "sections": [
+      {
+        "id": "sec-b484c139",
+        "title": "Section A: Fundamentals",
+        "instruction": "Attempt all questions in this section. Each question carries 2 mark(s).",
+        "questions": [
+          {
+            "id": "q-96f048e9",
+            "text": "What is a variable, and how does it differ from a constant? (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-eecf6e52",
+            "text": "Write a function in JavaScript to check if a given string is a palindrome. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-3d931736",
+            "text": "Explain the concept of Recursion with a short code example. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-53d2b6f1",
+            "text": "What is the time complexity of binary search on a sorted array? Explain. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-436b2312",
+            "text": "Explain the differences between REST and GraphQL APIs. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-39648ad1",
+            "text": "Describe the four pillars of Object-Oriented Programming (OOP) with real-world analogies. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-e6c1aabc",
+            "text": "Write a Python script that reads a text file and counts the frequency of each word. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-0d94946f",
+            "text": "What is a deadlock in Operating Systems? Describe the four necessary conditions for it to occur. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-c0a33693",
+            "text": "What is a variable, and how does it differ from a constant? (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-a2367ccb",
+        "title": "Section B: Intermediate Exercises",
+        "instruction": "Attempt all questions in this section. Each question carries 2 mark(s).",
+        "questions": [
+          {
+            "id": "q-5c3ce615",
+            "text": "Write a function in JavaScript to check if a given string is a palindrome. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-ff899363",
+            "text": "Explain the concept of Recursion with a short code example. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-8fed45c3",
+            "text": "What is the time complexity of binary search on a sorted array? Explain. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-061142ca",
+            "text": "Explain the differences between REST and GraphQL APIs. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-9aa741ba",
+            "text": "Describe the four pillars of Object-Oriented Programming (OOP) with real-world analogies. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-e81d0fab",
+            "text": "Write a Python script that reads a text file and counts the frequency of each word. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-226d0735",
+            "text": "What is a deadlock in Operating Systems? Describe the four necessary conditions for it to occur. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-5f3a777f",
+            "text": "What is a variable, and how does it differ from a constant? (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-e3889cb3",
+            "text": "Write a function in JavaScript to check if a given string is a palindrome. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-5df35d33",
+        "title": "Section C: Advanced Problems",
+        "instruction": "Attempt all questions in this section. Each question carries 2 mark(s).",
+        "questions": [
+          {
+            "id": "q-786d6a37",
+            "text": "Explain the concept of Recursion with a short code example. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-a206ad4a",
+            "text": "What is the time complexity of binary search on a sorted array? Explain. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-9bfe9acf",
+            "text": "Explain the differences between REST and GraphQL APIs. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-a02bfc77",
+            "text": "Describe the four pillars of Object-Oriented Programming (OOP) with real-world analogies. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-f28c630d",
+            "text": "Write a Python script that reads a text file and counts the frequency of each word. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-043b8e05",
+            "text": "What is a deadlock in Operating Systems? Describe the four necessary conditions for it to occur. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-986e909a",
+            "text": "What is a variable, and how does it differ from a constant? (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Microprocessor and MicroController",
+    "dueDate": "2026-05-26",
+    "questionTypes": [
+      "MCQ",
+      "Long Answer",
+      "True/False",
+      "One Word"
+    ],
+    "numQuestions": 25,
+    "totalMarks": 50,
+    "instructions": "",
+    "fileAttached": "CC record-1_merged (1).pdf",
+    "id": "0c86c167-88b3-4713-b3b9-b4f538308ffe",
+    "status": "completed",
+    "createdAt": "2026-05-26T04:09:36.521Z",
+    "sections": [
+      {
+        "id": "sec-62b39af0",
+        "title": "Section A: Fundamentals",
+        "instruction": "Attempt all questions in this section. Each question carries 2 mark(s).",
+        "questions": [
+          {
+            "id": "q-0235cc94",
+            "text": "What is a variable, and how does it differ from a constant? (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-3ecc8397",
+            "text": "Write a function in JavaScript to check if a given string is a palindrome. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-da436323",
+            "text": "Explain the concept of Recursion with a short code example. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-f704ac64",
+            "text": "What is the time complexity of binary search on a sorted array? Explain. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-d030196f",
+            "text": "Explain the differences between REST and GraphQL APIs. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-86639718",
+            "text": "Describe the four pillars of Object-Oriented Programming (OOP) with real-world analogies. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-efdaf1f3",
+            "text": "Write a Python script that reads a text file and counts the frequency of each word. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-40776d42",
+            "text": "What is a deadlock in Operating Systems? Describe the four necessary conditions for it to occur. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-50f5bb40",
+            "text": "What is a variable, and how does it differ from a constant? (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-d13918c5",
+        "title": "Section B: Intermediate Exercises",
+        "instruction": "Attempt all questions in this section. Each question carries 2 mark(s).",
+        "questions": [
+          {
+            "id": "q-ab35520a",
+            "text": "Write a function in JavaScript to check if a given string is a palindrome. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-584a6ad4",
+            "text": "Explain the concept of Recursion with a short code example. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-a611dcae",
+            "text": "What is the time complexity of binary search on a sorted array? Explain. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-762bf5b4",
+            "text": "Explain the differences between REST and GraphQL APIs. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-fb500bcb",
+            "text": "Describe the four pillars of Object-Oriented Programming (OOP) with real-world analogies. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-41051166",
+            "text": "Write a Python script that reads a text file and counts the frequency of each word. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-b48adc03",
+            "text": "What is a deadlock in Operating Systems? Describe the four necessary conditions for it to occur. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-5ed85ab8",
+            "text": "What is a variable, and how does it differ from a constant? (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-84f7aabb",
+            "text": "Write a function in JavaScript to check if a given string is a palindrome. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-62267c89",
+        "title": "Section C: Advanced Problems",
+        "instruction": "Attempt all questions in this section. Each question carries 2 mark(s).",
+        "questions": [
+          {
+            "id": "q-5d61619e",
+            "text": "Explain the concept of Recursion with a short code example. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-29cc02b5",
+            "text": "What is the time complexity of binary search on a sorted array? Explain. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-bf0aa101",
+            "text": "Explain the differences between REST and GraphQL APIs. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-6ed398af",
+            "text": "Describe the four pillars of Object-Oriented Programming (OOP) with real-world analogies. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-90c5dcb5",
+            "text": "Write a Python script that reads a text file and counts the frequency of each word. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-c07e5997",
+            "text": "What is a deadlock in Operating Systems? Describe the four necessary conditions for it to occur. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-6b799a14",
+            "text": "What is a variable, and how does it differ from a constant? (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Microprocessor and MicroController",
+    "dueDate": "2026-05-26",
+    "questionTypes": [
+      "MCQ",
+      "Long Answer",
+      "True/False",
+      "One Word"
+    ],
+    "numQuestions": 25,
+    "totalMarks": 50,
+    "instructions": "",
+    "fileAttached": "CC record-1_merged (1).pdf",
+    "id": "ec058d1b-8730-4bda-ae3c-468348302fc0",
+    "status": "completed",
+    "createdAt": "2026-05-26T04:09:20.491Z",
+    "sections": [
+      {
+        "id": "sec-209e545a",
+        "title": "Section A: Fundamentals",
+        "instruction": "Attempt all questions in this section. Each question carries 2 mark(s).",
+        "questions": [
+          {
+            "id": "q-aa4474ac",
+            "text": "What is a variable, and how does it differ from a constant? (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-d9c04123",
+            "text": "Write a function in JavaScript to check if a given string is a palindrome. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-f3d028e5",
+            "text": "Explain the concept of Recursion with a short code example. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-05560f86",
+            "text": "What is the time complexity of binary search on a sorted array? Explain. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-90d64f5a",
+            "text": "Explain the differences between REST and GraphQL APIs. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-3c3bafa4",
+            "text": "Describe the four pillars of Object-Oriented Programming (OOP) with real-world analogies. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-6d0a231b",
+            "text": "Write a Python script that reads a text file and counts the frequency of each word. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-25780663",
+            "text": "What is a deadlock in Operating Systems? Describe the four necessary conditions for it to occur. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-5f7892c9",
+            "text": "What is a variable, and how does it differ from a constant? (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2a3da4c6",
+        "title": "Section B: Intermediate Exercises",
+        "instruction": "Attempt all questions in this section. Each question carries 2 mark(s).",
+        "questions": [
+          {
+            "id": "q-307954b7",
+            "text": "Write a function in JavaScript to check if a given string is a palindrome. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-25c15ba9",
+            "text": "Explain the concept of Recursion with a short code example. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-2b9c8fcf",
+            "text": "What is the time complexity of binary search on a sorted array? Explain. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-83296535",
+            "text": "Explain the differences between REST and GraphQL APIs. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-39fce000",
+            "text": "Describe the four pillars of Object-Oriented Programming (OOP) with real-world analogies. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-f400f52a",
+            "text": "Write a Python script that reads a text file and counts the frequency of each word. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-ca9d70c5",
+            "text": "What is a deadlock in Operating Systems? Describe the four necessary conditions for it to occur. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-830f387d",
+            "text": "What is a variable, and how does it differ from a constant? (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-0825d3be",
+            "text": "Write a function in JavaScript to check if a given string is a palindrome. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-264e613b",
+        "title": "Section C: Advanced Problems",
+        "instruction": "Attempt all questions in this section. Each question carries 2 mark(s).",
+        "questions": [
+          {
+            "id": "q-418526a5",
+            "text": "Explain the concept of Recursion with a short code example. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-5479db4a",
+            "text": "What is the time complexity of binary search on a sorted array? Explain. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-50fe0053",
+            "text": "Explain the differences between REST and GraphQL APIs. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-8cefac66",
+            "text": "Describe the four pillars of Object-Oriented Programming (OOP) with real-world analogies. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-2dccbe7e",
+            "text": "Write a Python script that reads a text file and counts the frequency of each word. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "easy",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-b38a1c0c",
+            "text": "What is a deadlock in Operating Systems? Describe the four necessary conditions for it to occur. (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "medium",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          },
+          {
+            "id": "q-54c73f51",
+            "text": "What is a variable, and how does it differ from a constant? (Topic Focus: Microprocessor and MicroController - MCQ & Long Answer & True/False & One Word)",
+            "difficulty": "hard",
+            "marks": 2,
+            "options": [
+              "Option A",
+              "Option B",
+              "Option C",
+              "Option D"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
