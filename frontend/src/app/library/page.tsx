@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Sidebar from '../../components/Sidebar';
 import Header from '../../components/Header';
-import { Search, FileText, Download, Eye, Trash2, Calendar } from 'lucide-react';
+import { Search, FileText, Download, Eye, Trash2, Calendar, AlertTriangle, CheckCircle, Info } from 'lucide-react';
 
 interface LibraryItem {
   id: string;
@@ -37,10 +37,33 @@ export default function LibraryPage() {
   const [search, setSearch] = useState('');
   const [filterType, setFilterType] = useState<'all' | 'pdf' | 'txt' | 'quiz'>('all');
   const [previewItem, setPreviewItem] = useState<LibraryItem | null>(null);
+  
+  // Custom Toast State
+  const [toast, setToast] = useState<{ message: string; subMessage: string; type: 'success' | 'info' } | null>(null);
+  
+  // Custom Delete Modal State
+  const [deleteConfirmItem, setDeleteConfirmItem] = useState<LibraryItem | null>(null);
 
-  const handleDelete = (id: string) => {
-    if (confirm('Are you sure you want to delete this resource from your library?')) {
-      setItems(items.filter(item => item.id !== id));
+  const showToast = (message: string, subMessage: string, type: 'success' | 'info' = 'success') => {
+    setToast({ message, subMessage, type });
+    setTimeout(() => {
+      setToast(null);
+    }, 3500);
+  };
+
+  const handleDeleteClick = (item: LibraryItem) => {
+    setDeleteConfirmItem(item);
+  };
+
+  const executeDelete = () => {
+    if (deleteConfirmItem) {
+      setItems(items.filter(item => item.id !== deleteConfirmItem.id));
+      showToast(
+        "Resource Removed", 
+        `"${deleteConfirmItem.name}" has been deleted from your library vault.`, 
+        'info'
+      );
+      setDeleteConfirmItem(null);
     }
   };
 
@@ -51,7 +74,6 @@ export default function LibraryPage() {
     const a = document.createElement("a");
     a.href = url;
     
-    // Convert extension to .txt if it is a mock pdf/quiz to avoid system binary parse errors on opening
     const downloadName = item.name.endsWith('.pdf') 
       ? item.name.replace('.pdf', '_notes.txt') 
       : item.name.endsWith('.quiz') 
@@ -63,6 +85,13 @@ export default function LibraryPage() {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
+
+    // Trigger premium Toast notification instead of browser alert!
+    showToast(
+      "Download Initialized", 
+      `"${downloadName}" is downloading to your local device.`, 
+      'success'
+    );
   };
 
   const filteredItems = items.filter(item => {
@@ -73,7 +102,7 @@ export default function LibraryPage() {
   });
 
   return (
-    <div className="monorepo-container animate-fade-in" style={{ display: 'flex', minHeight: '97vh', gap: '12px' }}>
+    <div className="monorepo-container animate-fade-in" style={{ display: 'flex', minHeight: '97vh', gap: '12px', position: 'relative' }}>
       <Sidebar activeTab="library" />
 
       <main style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -226,7 +255,7 @@ export default function LibraryPage() {
                 onClick={(e) => e.stopPropagation()} // Stop click propagation to card when clicking buttons
               >
                 <button
-                  onClick={() => handleDelete(item.id)}
+                  onClick={() => handleDeleteClick(item)}
                   style={{
                     background: 'transparent',
                     border: 'none',
@@ -392,6 +421,149 @@ export default function LibraryPage() {
             </div>
           </div>
         )}
+
+        {/* Premium Custom Delete Confirmation Modal */}
+        {deleteConfirmItem && (
+          <div style={{
+            position: 'fixed',
+            top: 0, left: 0, right: 0, bottom: 0,
+            background: 'rgba(1, 22, 37, 0.4)',
+            backdropFilter: 'blur(4px)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 1000
+          }}>
+            <div style={{
+              background: '#FFF',
+              padding: '32px',
+              borderRadius: '24px',
+              width: '100%',
+              maxWidth: '440px',
+              boxShadow: '0 20px 40px rgba(0,0,0,0.15)',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              textAlign: 'center',
+              gap: '16px'
+            }}>
+              <div style={{
+                width: '56px',
+                height: '56px',
+                borderRadius: '50%',
+                background: 'rgba(229, 104, 32, 0.1)',
+                color: 'var(--color-orange)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}>
+                <AlertTriangle size={28} />
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                <h3 style={{ fontFamily: 'var(--font-bricolage)', fontSize: '20px', fontWeight: 800, color: 'var(--color-navy)', margin: 0 }}>
+                  Remove Resource?
+                </h3>
+                <p style={{ fontSize: '13px', color: 'var(--color-text-muted)', margin: 0, padding: '0 12px' }}>
+                  Are you sure you want to delete <strong style={{ color: 'var(--color-navy)' }}>"{deleteConfirmItem.name}"</strong>? This action cannot be undone.
+                </p>
+              </div>
+
+              <div style={{ display: 'flex', gap: '12px', width: '100%', marginTop: '12px' }}>
+                <button
+                  onClick={() => setDeleteConfirmItem(null)}
+                  style={{
+                    flex: 1,
+                    padding: '12px 0',
+                    borderRadius: '100px',
+                    border: '1px solid rgba(0,0,0,0.08)',
+                    background: '#FFF',
+                    fontSize: '14px',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                    color: 'var(--color-text-secondary)',
+                    fontFamily: 'var(--font-bricolage)'
+                  }}
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={executeDelete}
+                  style={{
+                    flex: 1,
+                    padding: '12px 0',
+                    borderRadius: '100px',
+                    border: 'none',
+                    background: 'var(--color-orange)',
+                    color: '#FFF',
+                    fontSize: '14px',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                    fontFamily: 'var(--font-bricolage)'
+                  }}
+                >
+                  Yes, Remove
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Premium Sliding Toast Notification */}
+        {toast && (
+          <div style={{
+            position: 'fixed',
+            bottom: '24px',
+            right: '24px',
+            background: '#FFFFFF',
+            borderRadius: '16px',
+            padding: '16px 20px',
+            boxShadow: '0 12px 32px rgba(1, 22, 37, 0.12)',
+            border: '1px solid rgba(0,0,0,0.04)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '12px',
+            zIndex: 1100,
+            maxWidth: '360px',
+            animation: 'slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards'
+          }}>
+            <div style={{
+              width: '32px',
+              height: '32px',
+              borderRadius: '50%',
+              background: toast.type === 'success' ? 'rgba(75, 194, 109, 0.1)' : 'rgba(74, 144, 226, 0.1)',
+              color: toast.type === 'success' ? 'var(--color-success)' : '#4A90E2',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0
+            }}>
+              {toast.type === 'success' ? <CheckCircle size={18} /> : <Info size={18} />}
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', minWidth: 0 }}>
+              <span style={{ fontSize: '14px', fontWeight: 700, color: 'var(--color-navy)', fontFamily: 'var(--font-bricolage)' }}>
+                {toast.message}
+              </span>
+              <span style={{ fontSize: '12px', color: 'var(--color-text-secondary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                {toast.subMessage}
+              </span>
+            </div>
+          </div>
+        )}
+
+        {/* global CSS keyframes for Toast entrance */}
+        <style jsx global>{`
+          @keyframes slideUp {
+            from {
+              transform: translateY(20px) scale(0.95);
+              opacity: 0;
+            }
+            to {
+              transform: translateY(0) scale(1);
+              opacity: 1;
+            }
+          }
+        `}</style>
       </main>
     </div>
   );
